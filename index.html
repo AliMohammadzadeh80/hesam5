@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدیریت نوت‌ها</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+</head>
+<body>
+  <h1>مدیریت نوت‌ها</h1>
+  <form id="note-form">
+    <input type="text" id="note-title" placeholder="عنوان نوت" required />
+    <textarea id="note-content" placeholder="محتوای نوت" required></textarea>
+    <button type="submit">افزودن نوت</button>
+  </form>
+
+  <ul id="note-list"></ul>
+
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
